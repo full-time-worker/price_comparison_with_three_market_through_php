@@ -67,7 +67,7 @@ $url = explode('/',$url);
               <p>Add Product</p>
             </a>
           </li>
-		  <li class="nav-item <?=end($url)=='post.php'?'active':''?>">
+		  <li class="nav-item <?=end($url)=='add_offer.php'?'active':''?>">
             <a class="nav-link" href="add_offer.php">
               <i class="material-icons">add_circle</i>
               <p>Add Offer</p>

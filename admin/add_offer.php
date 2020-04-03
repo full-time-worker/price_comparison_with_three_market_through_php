@@ -1,5 +1,35 @@
 
 <?php require_once("header.php");?>
+<style>
+	/* upload image custom css */
+	
+	.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+
+}
+input#uploadFile1 {
+    padding: 24px 3px;
+}
+input#uploadFile2 {
+    padding: 24px 3px;
+}
+input#uploadFile3 {
+    padding: 24px 3px;
+}
+</style>
 <?php
 	
 	try {
@@ -43,51 +73,47 @@
 			</div> 
 			<form class="form-horizontal" method="post" action="" enctype="multipart/form-data">
 				
-				
+		
 				<div class="input-group my-4">
 					<div class="input-group-prepend" style=" margin-right: -50px;">
 						<span class="input-group-text" id="inputGroupFileAddon01"></span>
 					</div>
-					<div class="custom-file">
-						<input type="file" name="mr1" class="custom-file-input" id="inputGroupFile01"
-						aria-describedby="inputGroupFileAddon01">
-						<label class="custom-file-label" for="inputGroupFile01"><span class="material-icons" style="font-size: 20px; margin: 5px 6px 2px 0px; ">
+			   
+						<div class="fileUpload">
+						<span class="material-icons" style="font-size: 20px; margin: 5px 6px 2px 0px; ">
 							perm_media
-						</span></label>
-					</div>
+						</span>
+							<input id="uploadBtn1" type="file" class="upload"  name="mr1" />
+						</div>
+						<input id="uploadFile1" placeholder="Choose File" disabled="disabled" class="form-control" />
 				</div>
-				
+
 				<div class="input-group my-4">
 					<div class="input-group-prepend" style=" margin-right: -50px;">
 						<span class="input-group-text" id="inputGroupFileAddon01"></span>
 					</div>
-					<div class="custom-file">
-						<input type="file" name="mr2" class="custom-file-input" id="inputGroupFile01"
-						aria-describedby="inputGroupFileAddon01">
-						<label class="custom-file-label" for="inputGroupFile01"><span class="material-icons" style="font-size: 20px; margin: 5px 6px 2px 0px; ">
+			   
+						<div class="fileUpload">
+						<span class="material-icons" style="font-size: 20px; margin: 5px 6px 2px 0px; ">
 							perm_media
-						</span></label>
-					</div>
+						</span>
+							<input id="uploadBtn2" type="file" class="upload"  name="mr2" />
+						</div>
+						<input id="uploadFile2" placeholder="Choose File" disabled="disabled" class="form-control" />
 				</div>
-				
 				<div class="input-group my-4">
 					<div class="input-group-prepend" style=" margin-right: -50px;">
 						<span class="input-group-text" id="inputGroupFileAddon01"></span>
 					</div>
-					<div class="custom-file">
-						<input type="file" name="mr3" class="custom-file-input" id="inputGroupFile01"
-						aria-describedby="inputGroupFileAddon01">
-						<label class="custom-file-label" for="inputGroupFile01"><span class="material-icons" style="font-size: 20px; margin: 5px 6px 2px 0px; ">
+			   
+						<div class="fileUpload">
+						<span class="material-icons" style="font-size: 20px; margin: 5px 6px 2px 0px; ">
 							perm_media
-						</span></label>
-					</div>
+						</span>
+							<input id="uploadBtn3" type="file" class="upload"  name="mr3" />
+						</div>
+						<input id="uploadFile3" placeholder="Choose File" disabled="disabled" class="form-control" />
 				</div>
-				
-				
-				
-				
-				
-				
 				<div class="form-group my-4">
 					<button type="submit" class="btn btn-primary btn-lg btn-block login-button" name="add_offer">ADD OFFER</button>
 				</div>

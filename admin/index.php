@@ -15,8 +15,8 @@
 			<div class="col-md-12">
 				<div class="card">
 					<div class="card-header card-header-primary">
-						<h4 class="card-title ">Manage Offer</h4>
-						<p class="card-category"> Here you can manage of all Offer</p>
+						<h4 class="card-title ">Manage User</h4>
+						<p class="card-category"> Here you can manage of all User</p>
 					</div>
 					<div class="card-body">
 						<div class="table-responsive">
@@ -83,8 +83,8 @@
 			<div class="col-md-12">
 				<div class="card">
 					<div class="card-header card-header-primary">
-						<h4 class="card-title ">Manage User</h4>
-						<p class="card-category"> Here you can manage of all user</p>
+						<h4 class="card-title ">Manage Offer</h4>
+						<p class="card-category"> Here you can manage of all Offer</p>
 					</div>
 					<div class="card-body">
 						<div class="table-responsive">
@@ -124,7 +124,7 @@
 											<td><img src="<?= 'p_img/'.$data['mr3']?>" alt="" height="50px" width="60px"></td>
 											
 											<td>
-												<a class="btn btn-sm" href="javascript:void(0)" id="deleteuser" user-id="<?= $data['mr_id']?>" data-toggle="tooltip"
+												<a class="btn btn-sm" href="javascript:void(0)" id="deleteoffer" offer-id="<?= $data['mr_id']?>" data-toggle="tooltip"
 											data-placement="bottom" title="Delete!"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
 										</tr>
 										
@@ -227,6 +227,22 @@
 				$(this).closest('tr').remove();
 			}
 		});
+		// DELETE OFFER
+		$("tbody").on('click', '#deleteoffer', function () {
+			var confmag = confirm("Do you want to delete");
+			if (confmag == true) {
+				var offerId = $(this).attr('offer-id');
+				
+				$.post("dt.php", {
+					offerId: offerId
+				}
+				
+				);
+				
+				$(this).closest('tr').remove();
+			}
+		});
+		// DELETE USER
 		$("tbody").on('click', '#deleteuser', function () {
 			var confmag = confirm("Do you want to delete");
 			if (confmag == true) {
