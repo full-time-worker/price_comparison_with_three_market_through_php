@@ -15,5 +15,9 @@ spl_autoload_register(function($classes){
     $sql = "DELETE FROM `user` WHERE id = $userid";
     $deletePost = $admin->deletePost($sql);
    }
-
+if(isset($_REQUEST['offerId'])){
+    $offerId =$_REQUEST['offerId'];
+    $sql = "DELETE FROM `offer` WHERE  mr_id = $offerId";
+    $deletePost = $admin->deletePost($sql);
+}
 ?>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 01, 2020 at 07:00 PM
+-- Generation Time: Apr 03, 2020 at 06:16 AM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -21,6 +21,26 @@ SET time_zone = "+00:00";
 --
 -- Database: `market`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `offer`
+--
+
+CREATE TABLE `offer` (
+  `mr_id` int(255) NOT NULL,
+  `mr1` varchar(255) NOT NULL,
+  `mr2` varchar(255) NOT NULL,
+  `mr3` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `offer`
+--
+
+INSERT INTO `offer` (`mr_id`, `mr1`, `mr2`, `mr3`) VALUES
+(9, 'antique-1297675.png', 'cannon-1529973_960_720.png', 'gun-1482610_960_720.png');
 
 -- --------------------------------------------------------
 
@@ -49,7 +69,8 @@ INSERT INTO `post` (`post_id`, `post_title`, `post_img`, `m_one`, `m_tow`, `m_th
 (21, 'Title of Bisnu Boss ', '5e7cbdb9d0a64.jpg', 5, 6, 4, 'hello'),
 (22, 'Title of Shipu boss', '5e7d037d8937e.jpg', 10, 14, 15, 'hello'),
 (23, 'title of Sojib Boss', '5e81b7dc7f786.jpg', 10, 11, 9, 'hello'),
-(24, 'titlte of naim', '5e8216fcc5e31.jpg', 15, 14, 16, 'hello');
+(24, 'titlte of naim', '5e8216fcc5e31.jpg', 15, 14, 16, 'hello'),
+(25, 'Car', '5e85ee5c6d2ef.png', 3453, 234, 8754, 'admin');
 
 -- --------------------------------------------------------
 
@@ -70,11 +91,17 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `username`, `role`, `password`) VALUES
-(1, 'admin', 'admin', 0, 'admin');
+(41, 'admin', 'admin', 0, 'admin');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `offer`
+--
+ALTER TABLE `offer`
+  ADD PRIMARY KEY (`mr_id`);
 
 --
 -- Indexes for table `post`
@@ -94,16 +121,22 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT for table `offer`
+--
+ALTER TABLE `offer`
+  MODIFY `mr_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
 -- AUTO_INCREMENT for table `post`
 --
 ALTER TABLE `post`
-  MODIFY `post_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `post_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
