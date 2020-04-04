@@ -47,10 +47,10 @@
 			}
 		</style>
 		<div class='media-left'>
-			<div class='cart-img'> <a href='#'> <img class='media-object img-responsive' src='upload/<?php echo $op['post_img']; ?>' alt='product'> </a> </div>
+			<div class='cart-img'> <a href='#'> <img class='media-object img-responsive' src='upload/<?php if(isset($op['post_img'])){echo $op['post_img'];} ?>' alt='product'> </a> </div>
 		</div>
 		<div class='media-body'>
-			<h6 class='media-heading' style='margin-top:8px;'><?php echo $op['post_title']; ?></h6>
+			<h6 class='media-heading' style='margin-top:8px;'><?php if(isset($op['post_title'])){echo $op['post_title'];} ?></h6>
 		</div>
 	</li> 
 	
