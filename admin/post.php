@@ -70,9 +70,9 @@ input#uploadFile1 {
     <span class="material-icons" style="font-size: 20px; margin: 5px 6px 2px 0px; ">
         perm_media
         </span>
-        <input id="uploadBtn1" type="file" class="upload"  name="postImg" />
+        <input id="uploadBtn1" type="file" class="upload form-control"  name="postImg" />
     </div>
-        <input id="uploadFile1" placeholder="Choose File" disabled="disabled" class="form-control" />
+        <input id="uploadFile1" width="100%" placeholder="Choose File" disabled="disabled" class="form-control" />
         </div>
 </div>
 <div class="form-group my-4">

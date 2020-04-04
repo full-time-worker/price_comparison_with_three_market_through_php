@@ -102,7 +102,7 @@
 							?>
 							
 							<!-- Item -->
-							<div class="item item-post">
+							<div  class="item item-post">
 								<!-- Item img -->
 								<div class="item-img"> <img class="img-1" src="<?php echo 'upload/' . $op['post_img']; ?>" alt=""> <img class="img-2" src="<?php echo 'upload/' . $op['post_img']; ?>" alt="">
 									<!-- Overlay -->

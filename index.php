@@ -1,4 +1,20 @@
 <?php 
+
+try {
+											$conn = new PDO("mysql:host=localhost;dbname=market;","root","");
+											$s_off = "SELECT * FROM offer";
+											$add_banar = $conn->prepare($s_off);	
+											$add_banar->execute();
+											$banar_data = $add_banar->fetch(PDO::FETCH_ASSOC);
+											
+											
+											
+										}
+										
+										catch (Exception $e) {
+											error_log($e->getMessage());
+										}
+										
 include "header.php";?>
 
 <style>
@@ -31,7 +47,7 @@ include "header.php";?>
 				<!-- SLIDE  -->
 				<li data-transition="random" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" > 
 					<!-- MAIN IMAGE --> 
-					<img src="img1/vegetables-573958_1920.jpg"  alt="slider"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+					<img src="<?= 'admin/p_img/'.$banar_data['mr1']?>"  alt="slider"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"> 
 					<!-- LAYERS --> 
 					<!-- LAYER NR. 1 -->
 					<div class="tp-caption font-playfair sfb tp-resizeme" 
@@ -102,7 +118,77 @@ include "header.php";?>
 				<!-- SLIDE  -->
 				<li data-transition="random" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" > 
 					<!-- MAIN IMAGE --> 
-					<img src="img1/tomatoes-1239177_1920.jpg"  alt="slider"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+					<img src="<?= 'admin/p_img/'.$banar_data['mr2']?>"  alt="slider"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+					<!-- LAYERS --> 
+					<!-- LAYER NR. 1 -->
+					<div class="tp-caption font-playfair sfb tp-resizeme" 
+					data-x="center" data-hoffset="0" 
+					data-y="center" data-voffset="-150" 
+					data-speed="800" 
+					data-start="500" 
+					data-easing="Power3.easeInOut" 
+					data-splitin="none" 
+					data-splitout="none" 
+					data-elementdelay="0.1" 
+					data-endelementdelay="0.1" 
+					data-endspeed="300" 
+					style="z-index: 7; font-size:18px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">The Latest Product from PAVSHOP</div>
+					<!-- LAYER NR. 2 -->
+					<div class="tp-caption sfr font-regular tp-resizeme letter-space-4" 
+					data-x="center" data-hoffset="0" 
+					data-y="center" data-voffset="-50" 
+					data-speed="800" 
+					data-start="800" 
+					data-easing="Power3.easeInOut" 
+					data-splitin="chars" 
+					data-splitout="none" 
+					data-elementdelay="0.07" 
+					data-endelementdelay="0.1" 
+					data-endspeed="300" 
+					style="z-index: 6; font-size:78px; color:#fff; text-transform:uppercase; white-space: nowrap;">look beautiful </div>
+					<!-- LAYER NR. 2 -->
+					<div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4" 
+					data-x="center" data-hoffset="0" 
+					data-y="center" data-voffset="60" 
+					data-speed="800" 
+					data-start="1300" 
+					data-easing="Power3.easeInOut" 
+					data-splitin="chars" 
+					data-splitout="none" 
+					data-elementdelay="0.07" 
+					data-endelementdelay="0.1" 
+					data-endspeed="300" 
+					style="z-index: 6; font-size:140px; color:#fff; text-transform:uppercase; white-space: nowrap;">this season </div>
+					<!-- LAYER NR. 4 -->
+					<div class="tp-caption sfb font-extra-bold tp-resizeme" 
+					data-x="center" data-hoffset="120"
+					data-y="center" data-voffset="200"
+					data-speed="800" 
+					data-start="2200" 
+					data-easing="Power3.easeInOut" 
+					data-splitin="none" 
+					data-splitout="none" 
+					data-elementdelay="0.07" 
+					data-endelementdelay="0.1" 
+					data-endspeed="300" 
+					style="z-index: 6; font-size:60px; color:#fff; text-transform:uppercase; white-space: nowrap;"><small class="font-regular"></small>  </div>
+					<!-- LAYER NR. 4 -->
+					<div class="tp-caption lfb tp-scrollbelowslider tp-resizeme" 
+					data-x="center" data-hoffset="-120" 
+					data-y="center" data-voffset="200" 
+					data-speed="800" 
+					data-start="2200" 
+					data-easing="Power3.easeInOut" 
+					data-elementdelay="0.1" 
+					data-endelementdelay="0.1" 
+					data-endspeed="300" 
+					data-scrolloffset="0"
+					style="z-index: 8;"></div>
+				</li>
+				<!--SLIDER-3-->
+				<li data-transition="random" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" > 
+					<!-- MAIN IMAGE --> 
+					<img src="<?= 'admin/p_img/'.$banar_data['mr3']?>"  alt="slider"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"> 
 					<!-- LAYERS --> 
 					<!-- LAYER NR. 1 -->
 					<div class="tp-caption font-playfair sfb tp-resizeme" 
