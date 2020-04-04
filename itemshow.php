@@ -51,8 +51,6 @@
 		</div>
 		<div class='media-body'>
 			<h6 class='media-heading' style='margin-top:8px;'><?php echo $op['post_title']; ?></h6>
-			
-			<button class='btnOurFoot del'>Delete</button>
 		</div>
 	</li> 
 	

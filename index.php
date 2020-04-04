@@ -1,20 +1,20 @@
 <?php 
-
-try {
-											$conn = new PDO("mysql:host=localhost;dbname=market;","root","");
-											$s_off = "SELECT * FROM offer";
-											$add_banar = $conn->prepare($s_off);	
-											$add_banar->execute();
-											$banar_data = $add_banar->fetch(PDO::FETCH_ASSOC);
-											
-											
-											
-										}
-										
-										catch (Exception $e) {
-											error_log($e->getMessage());
-										}
-										
+	
+	try {
+		$conn = new PDO("mysql:host=localhost;dbname=market;","root","");
+		$s_off = "SELECT * FROM offer";
+		$add_banar = $conn->prepare($s_off);	
+		$add_banar->execute();
+		$banar_data = $add_banar->fetch(PDO::FETCH_ASSOC);
+		
+		
+		
+	}
+	
+	catch (Exception $e) {
+		error_log($e->getMessage());
+	}
+	
 include "header.php";?>
 
 <style>
@@ -262,9 +262,9 @@ include "header.php";?>
 
 <!-- Content -->
 <div id="content"> 
-    
-    <!-- Popular Products -->
-    <section class="shop-page padding-top-100 padding-bottom-100">
+	
+	<!-- Popular Products -->
+	<section class="shop-page padding-top-100 padding-bottom-100">
 		<div class="container">
 			<div class="title_1"><h3>OUR PRODUCTS</h3></div>
 			<!-- Popular Item Slide -->
@@ -285,10 +285,10 @@ include "header.php";?>
 					?>
 					
 					<!-- Item -->
-					<div class="col-md-3">
+					<div class="col-md-2">
 						<div class="item"> 
 							<!-- Item img -->
-							<div class="item-img"> <img class="img-1" src="<?php echo "upload/".$op['post_img']; ?>" alt="" > <img class="img-2" src="<?php echo "upload/".$op['post_img']; ?>" alt="" > 
+							<div class="item-img"> <img style="object-fit:contain" class="img-1 img-fluid" src="<?php echo "upload/".$op['post_img']; ?>" alt="" > <img class="img-2 img-fluid" style="object-fit: contain;" src="<?php echo "upload/".$op['post_img']; ?>" alt="" > 
 								<!-- Overlay -->
 								<div class="overlay">
 									<div class="position-center-center">
@@ -316,9 +316,9 @@ include "header.php";?>
 			</div>
 		</div>
 	</section>
-    
+	
 	<?php 
 		
 		include 'footer.php';
 		
-	?>		
+	?>								
