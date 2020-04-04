@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 03, 2020 at 06:16 AM
+-- Generation Time: Apr 04, 2020 at 05:50 PM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -40,7 +40,7 @@ CREATE TABLE `offer` (
 --
 
 INSERT INTO `offer` (`mr_id`, `mr1`, `mr2`, `mr3`) VALUES
-(9, 'antique-1297675.png', 'cannon-1529973_960_720.png', 'gun-1482610_960_720.png');
+(10, 'banner.png', 'Banner-1920x900.jpg', 'wosiwosi-hero-banner.jpg');
 
 -- --------------------------------------------------------
 
@@ -63,14 +63,15 @@ CREATE TABLE `post` (
 --
 
 INSERT INTO `post` (`post_id`, `post_title`, `post_img`, `m_one`, `m_tow`, `m_three`, `post_author`) VALUES
-(18, 'This is title One', '5e7ca990dcebf.jpg', 10, 15, 20, 'hello'),
-(19, 'This is title two ', '5e7ca9a89f56f.jpg', 15, 11, 16, 'hello'),
-(20, 'This is title three', '5e7ca9bac58f6.jpg', 15, 15, 13, 'hello'),
-(21, 'Title of Bisnu Boss ', '5e7cbdb9d0a64.jpg', 5, 6, 4, 'hello'),
-(22, 'Title of Shipu boss', '5e7d037d8937e.jpg', 10, 14, 15, 'hello'),
-(23, 'title of Sojib Boss', '5e81b7dc7f786.jpg', 10, 11, 9, 'hello'),
-(24, 'titlte of naim', '5e8216fcc5e31.jpg', 15, 14, 16, 'hello'),
-(25, 'Car', '5e85ee5c6d2ef.png', 3453, 234, 8754, 'admin');
+(26, 'Alpro-Milk', '5e888c3acaadc.jpg', 32, 53, 64, 'admin'),
+(27, 'Banana', '5e888cd63c6f7.jpg', 35, 86, 68, 'admin'),
+(28, 'Arla-Milk', '5e888ce7126c1.jpg', 35, 25, 78, 'admin'),
+(29, 'Granny-Smith', '5e888cf6868fe.jpg', 34, 89, 34, 'admin'),
+(30, 'Lemon', '5e888d0736677.jpg', 65, 65, 98, 'admin'),
+(31, 'Vine-Tomato', '5e888d16e45f7.jpg', 43, 89, 45, 'admin'),
+(32, 'Yellow-Onion', '5e888d289affe.jpg', 58, 57, 78, 'admin'),
+(33, 'Plum', '5e888dc12c964.jpg', 64, 87, 23, 'admin'),
+(34, 'Carrots', '5e888e290d770.jpg', 56, 36, 65, 'admin');
 
 -- --------------------------------------------------------
 
@@ -124,13 +125,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `offer`
 --
 ALTER TABLE `offer`
-  MODIFY `mr_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `mr_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `post`
 --
 ALTER TABLE `post`
-  MODIFY `post_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `post_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `user`
