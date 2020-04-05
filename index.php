@@ -294,8 +294,8 @@ include "header.php";?>
 									<div class="position-center-center">
 										<div class="inn">
 											<a href="<?php echo "upload/".$op['post_img']; ?>" data-lighter><i class="icon-eye"></i></a>
-											<span class="boxtrack icon1 icon" ><i class="icon-basket"></i></span>
-											<span class="boxtrack icon2" ><i class="fas fa-check"></i></span>
+											<span class="boxtrack icon1 icon " ><i class="icon-basket " id="c1"></i></span>
+											<span class="boxtrack icon2 " ><i class="fas fa-check"></i></span>
 											<div class="fhidden" hidden> <?php echo $op['post_id']; ?> </div>
 										</div>
 									</div>
@@ -316,9 +316,10 @@ include "header.php";?>
 			</div>
 		</div>
 	</section>
+
 	
 	<?php 
 		
 		include 'footer.php';
 		
-	?>								
+	?>											

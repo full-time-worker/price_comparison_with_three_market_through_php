@@ -8,7 +8,7 @@ $(document).ready(function(){
 	
 	
     for(let x=0 ; x<icon1.length; x++){
-        icon1[x].addEventListener('click',function(){
+        icon1[x].addEventListener('click',function(e){
             this.classList.toggle('icon');
             this.nextElementSibling.classList.toggle('icon');
             let valueadd= this.parentElement.lastElementChild.innerText.trim();
@@ -17,13 +17,13 @@ $(document).ready(function(){
             numberofitem()
 			
             ajaxwithitemshow()
-			
+			e.target.parentNode.parentNode.style.background="green"
 		});
 	}
 	
 	
     for(let x=0 ; x<icon1.length; x++){
-        icon2[x].addEventListener('click',function(){
+        icon2[x].addEventListener('click',function(e){
             this.classList.toggle('icon');
             this.previousElementSibling.classList.toggle('icon');
             let valueremove= this.parentElement.lastElementChild.innerText.trim();
@@ -34,6 +34,7 @@ $(document).ready(function(){
             numberofitem()
 			
             ajaxwithitemshow()
+			e.target.parentNode.parentNode.style.background="#52594a"
 		});
 	}
 	

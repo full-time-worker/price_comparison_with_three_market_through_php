@@ -20,7 +20,8 @@
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/own-menu.js"></script> 
 <script src="js/jquery.lighter.js"></script> 
-<script src="js/owl.carousel.min.js"></script> 
+<script src="js/owl.carousel.min.js"></script>
+
 
 <!-- SLIDER REVOLUTION 4.x SCRIPTS  --> 
 <script type="text/javascript" src="rs-plugin/js/jquery.tp.t.min.js"></script> 
@@ -31,5 +32,6 @@
 <script src="js/ourjs.js"></script> 
 <script src="js/compare.js"></script>
 <script src="js/app.js"></script>
+<script src="js/busket.js"></script>
 </body>
 </html>
