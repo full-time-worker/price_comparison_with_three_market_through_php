@@ -73,6 +73,18 @@ $url = explode('/',$url);
               <p>Add Offer</p>
             </a>
           </li>
+		  <li class="nav-item <?=end($url)=='location.php'?'active':''?>">
+            <a class="nav-link" href="location.php">
+              <i class="material-icons">map</i>
+              <p>Add Location</p>
+            </a>
+          </li>
+		  <li class="nav-item <?=end($url)=='s_location.php'?'active':''?>">
+            <a class="nav-link" href="s_location.php">
+              <i class="material-icons">map</i>
+              <p>Show Location</p>
+            </a>
+          </li>
           <li class="nav-item <?=end($url)=='logout.php'?'active':''?>">
             <a class="nav-link" href="logout.php">
               <i class="material-icons">logout</i>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 04, 2020 at 05:50 PM
+-- Generation Time: Apr 06, 2020 at 05:05 PM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -25,6 +25,29 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `location`
+--
+
+CREATE TABLE `location` (
+  `id` int(11) NOT NULL,
+  `e_location` mediumtext NOT NULL,
+  `d_location` mediumtext NOT NULL,
+  `e_location2` mediumtext NOT NULL,
+  `d_location2` mediumtext NOT NULL,
+  `e_location3` mediumtext NOT NULL,
+  `d_location3` mediumtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `location`
+--
+
+INSERT INTO `location` (`id`, `e_location`, `d_location`, `e_location2`, `d_location2`, `e_location3`, `d_location3`) VALUES
+(5, '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7199.014071094569!2d88.60108852676265!3d25.554792684924468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fb4e70a5903923%3A0x4613ad97964f588d!2sMohonpur!5e0!3m2!1sen!2sbd!4v1586177126537!5m2!1sen!2sbd\"  width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>', 'Mohonpur', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28798.969202782922!2d88.60652395613583!3d25.542668572975327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fb4e08ad882c77%3A0xa57e163d3abbfd4e!2sPark%20Of%20Ramsagar!5e0!3m2!1sen!2sbd!4v1586177206072!5m2!1sen!2sbd\"  width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>', 'Park Of Ramsagar', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.7040457363255!2d88.52841131541219!3d25.514915033749464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fb491dbd5be6c5%3A0xb23241c94f57aa2b!2sMadhabpur%20Baragachhi%2C%20West%20Bengal%20733132%2C%20India!5e0!3m2!1sen!2sbd!4v1586177239971!5m2!1sen!2sbd\"  width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>', 'Madhabpur Baragachhi');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `offer`
 --
 
@@ -40,7 +63,7 @@ CREATE TABLE `offer` (
 --
 
 INSERT INTO `offer` (`mr_id`, `mr1`, `mr2`, `mr3`) VALUES
-(10, 'banner.png', 'Banner-1920x900.jpg', 'wosiwosi-hero-banner.jpg');
+(11, 'banner.png', 'Banner-1920x900.jpg', 'wosiwosi-hero-banner.jpg');
 
 -- --------------------------------------------------------
 
@@ -71,7 +94,8 @@ INSERT INTO `post` (`post_id`, `post_title`, `post_img`, `m_one`, `m_tow`, `m_th
 (31, 'Vine-Tomato', '5e888d16e45f7.jpg', 43, 89, 45, 'admin'),
 (32, 'Yellow-Onion', '5e888d289affe.jpg', 58, 57, 78, 'admin'),
 (33, 'Plum', '5e888dc12c964.jpg', 64, 87, 23, 'admin'),
-(34, 'Carrots', '5e888e290d770.jpg', 56, 36, 65, 'admin');
+(34, 'Carrots', '5e888e290d770.jpg', 56, 36, 65, 'admin'),
+(35, 'Pink-Lady', '5e8ad3ed87175.jpg', 435, 24, 532, 'admin');
 
 -- --------------------------------------------------------
 
@@ -99,6 +123,12 @@ INSERT INTO `user` (`id`, `name`, `username`, `role`, `password`) VALUES
 --
 
 --
+-- Indexes for table `location`
+--
+ALTER TABLE `location`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `offer`
 --
 ALTER TABLE `offer`
@@ -122,16 +152,22 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT for table `location`
+--
+ALTER TABLE `location`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
 -- AUTO_INCREMENT for table `offer`
 --
 ALTER TABLE `offer`
-  MODIFY `mr_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `mr_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `post`
 --
 ALTER TABLE `post`
-  MODIFY `post_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `post_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT for table `user`

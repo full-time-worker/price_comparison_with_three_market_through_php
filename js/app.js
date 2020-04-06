@@ -17,7 +17,8 @@ $(document).ready(function(){
             numberofitem()
 			
             ajaxwithitemshow()
-			e.target.parentNode.parentNode.style.background="green"
+			
+			this.parentNode.style.background="green"
 		});
 	}
 	
@@ -34,7 +35,7 @@ $(document).ready(function(){
             numberofitem()
 			
             ajaxwithitemshow()
-			e.target.parentNode.parentNode.style.background="#52594a"
+			this.parentNode.style.background="#52594a"
 		});
 	}
 	
