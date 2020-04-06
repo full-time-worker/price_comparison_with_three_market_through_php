@@ -5,17 +5,15 @@
 		$s_off = "SELECT * FROM offer";
 		$add_banar = $conn->prepare($s_off);	
 		$add_banar->execute();
-		$banar_data = $add_banar->fetch(PDO::FETCH_ASSOC);
-		
-		
-		
+		$banar_data = $add_banar->fetch(PDO::FETCH_ASSOC);		
 	}
 	
 	catch (Exception $e) {
 		error_log($e->getMessage());
 	}
 	
-include "header.php";?>
+include "header.php";
+?>
 
 <style>
 	
@@ -285,7 +283,7 @@ include "header.php";?>
 					?>
 					
 					<!-- Item -->
-					<div class="col-md-2">
+					<div class="col-lg-2 col-md-4 col-12">
 						<div class="item"> 
 							<!-- Item img -->
 							<div class="item-img"> <img style="object-fit:contain" class="img-1 img-fluid" src="<?php echo "upload/".$op['post_img']; ?>" alt="" > <img class="img-2 img-fluid" style="object-fit: contain;" src="<?php echo "upload/".$op['post_img']; ?>" alt="" > 
@@ -302,7 +300,7 @@ include "header.php";?>
 								</div>
 							</div>
 							<!-- Item Name -->
-							<div class="item-name"> <a href="#."> <?php echo $op['post_title']; ?> </a>
+							<div class="item-name"> <a href="#." style="font-size:17px;"> <?php echo $op['post_title']; ?> </a>
 							</div>
 							
 							<!-- Price --> 
@@ -312,6 +310,7 @@ include "header.php";?>
 					
 				<?php } ?>
 				
+				<script src="//code.tidio.co/telqh6ju1ju9uai0ny2gji48xih5xlvs.js" async></script>
 				
 			</div>
 		</div>
@@ -319,7 +318,6 @@ include "header.php";?>
 
 	
 	<?php 
-		
 		include 'footer.php';
 		
 	?>											
