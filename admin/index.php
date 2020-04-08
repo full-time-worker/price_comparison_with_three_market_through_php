@@ -1,11 +1,12 @@
 <?php
 	require_once('header.php');
+	require_once('navbar.php');
 	
 	$admin = new Admin();
 	
 ?>
 
-<div class="container">
+<div class="container">    
 	<div class="row">
 		<!-- manage user -->
 		<div class="col-md-10 offset-md-2">
@@ -91,9 +92,9 @@
 							<table class="table">
 								<thead class="text-primary">
 									<th>ID</th>
-									<th>Market-1</th>
-									<th>Market-2</th>
-									<th>Market-3</th>
+									<th>AEON BiG Subang Jaya</th>
+									<th>HeroMarket</th>
+									<th>Giant Mall Kelana Jaya</th>
 									<th>Action</th>
 								</thead>
 								<tbody>
@@ -169,9 +170,9 @@
 												echo  "<th>S.N</th>";
 												echo   "<th>Product Name</th>";
 												echo "<th>image</th>";
-												echo"<th>price M1</th>";
-												echo " <th>price M2</th>";
-												echo" <th>price M3</th>";
+												echo"<th>AEON BiG</th>";
+												echo " <th>HeroMarket</th>";
+												echo" <th>Giant Mall</th>";
 												echo" <th>Action</th>";
 												}else{
 												echo "<h3 class='text-center'>There is no post</h3>";
