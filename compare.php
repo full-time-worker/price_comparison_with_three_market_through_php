@@ -95,7 +95,7 @@
 				if (isset($_SESSION['array'])) { 
 					while ($op = mysqli_fetch_assoc($output)) {
 					?>
-					<div class="col-6 col-md-4 col-lg-2 mb-5">
+					<div value = '<?php echo $op["post_id"]; ?>' class="col-6 col-md-4 dl col-lg-2 mb-5">
 						<div class="card" style="width: 18rem;">
 							<img class="card-img-top" src="<?php echo 'upload/' . $op['post_img']; ?>" alt="Product_img">
 							<div class="card-body text-center">
@@ -103,8 +103,7 @@
 							</div>
 						</div>
 					</div>
-					
-				<?php }} ?>
+				<?php  }} ?>
 				
 		</div>
 	</div>
