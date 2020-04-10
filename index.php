@@ -1,7 +1,7 @@
 <?php 
 	
 	try {
-		$conn = new PDO("mysql:host=localhost;dbname=market;","root","");
+		require "pdo_conn.php";
 		$s_off = "SELECT * FROM offer";
 		$add_banar = $conn->prepare($s_off);	
 		$add_banar->execute();

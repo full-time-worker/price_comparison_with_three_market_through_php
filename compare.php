@@ -305,7 +305,7 @@
 					//$d_l = "Jalan Kemajuan Subang, Ss 16, 47500 Subang Jaya, Selangor, Malaysia";
 					
 					try {
-						$conn = new PDO("mysql:host=localhost;dbname=market;","root","");
+						require "pdo_conn.php";
 						$s_o = "SELECT * FROM location";
 						$show_offer = $conn->prepare($s_o);	
 						$show_offer->execute();

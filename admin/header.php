@@ -1,16 +1,14 @@
 <?php
 ob_start();
-spl_autoload_register(function($classes){
-  require_once('class/'. $classes .'.php');
+spl_autoload_register(function ($classes) {
+    require_once ('class/' . $classes . '.php');
 
-  });
-  if(!isset($_COOKIE['name'])){
+});
+if (!isset($_COOKIE['name'])) {
     header('location:login.php');
-  }
+}
 $url = $_SERVER['PHP_SELF'];
-$url = explode('/',$url);
-
-
+$url = explode('/', $url);
 
 ?>
 <!DOCTYPE html>
@@ -49,43 +47,49 @@ $url = explode('/',$url);
         </a></div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item  <?=end($url)=='index.php'?'active':''?>">
+          <li class="nav-item  <?=end($url) == 'index.php' ? 'active' : ''?>">
             <a class="nav-link" href="index.php">
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
             </a>
           </li>
-          <li class="nav-item <?=end($url)=='add-user.php'?'active':''?> ">
+          <li class="nav-item <?=end($url) == 'add-user.php' ? 'active' : ''?> ">
             <a class="nav-link" href="add-user.php">
               <i class="material-icons">person</i>
               <p>Add User</p>
             </a>
           </li>
-          <li class="nav-item <?=end($url)=='post.php'?'active':''?>">
+          <li class="nav-item <?=end($url) == 'post.php' ? 'active' : ''?>">
             <a class="nav-link" href="post.php">
               <i class="material-icons">shop</i>
               <p>Add Product</p>
             </a>
           </li>
-		  <li class="nav-item <?=end($url)=='add_offer.php'?'active':''?>">
+		  <li class="nav-item <?=end($url) == 'add_offer.php' ? 'active' : ''?>">
             <a class="nav-link" href="add_offer.php">
               <i class="material-icons">add_circle</i>
               <p>Add Offer</p>
             </a>
           </li>
-		  <li class="nav-item <?=end($url)=='location.php'?'active':''?>">
+		  <li class="nav-item <?=end($url) == 'location.php' ? 'active' : ''?>">
             <a class="nav-link" href="location.php">
               <i class="material-icons">map</i>
               <p>Add Location</p>
             </a>
           </li>
-		  <li class="nav-item <?=end($url)=='s_location.php'?'active':''?>">
+		  <li class="nav-item <?=end($url) == 's_location.php' ? 'active' : ''?>">
             <a class="nav-link" href="s_location.php">
               <i class="material-icons">map</i>
               <p>Show Location</p>
             </a>
           </li>
-          <li class="nav-item <?=end($url)=='logout.php'?'active':''?>">
+          <li class="nav-item <?=end($url) == 'contact_us.php' ? 'active' : ''?>">
+            <a class="nav-link" href="contact_us.php">
+              <i class="material-icons">contacts</i>
+              <p>User Message</p>
+            </a>
+          </li>
+          <li class="nav-item <?=end($url) == 'logout.php' ? 'active' : ''?>">
             <a class="nav-link" href="logout.php">
               <i class="material-icons">logout</i>
               <p>Log out</p>
