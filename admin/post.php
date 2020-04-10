@@ -80,7 +80,7 @@ input#uploadFile1 {
     <div class="cols-sm-10">
         <div class="input-group">
         <span class="input-group-addon"><i class="fa fa-money"></i></span>
-            <input type="text" class="form-control" name="m_one" id="m_one" placeholder="Enter Market One Price"/>
+            <input type="text" class="form-control" name="m_one" id="m_one" placeholder="Enter AEON BiG Market Price"/>
         </div>
     </div>
 </div>
@@ -89,7 +89,7 @@ input#uploadFile1 {
     <div class="cols-sm-10">
         <div class="input-group">
         <span class="input-group-addon"><i class="fa fa-money"></i></span>
-            <input type="text" class="form-control" name="m_tow" id="m_tow" placeholder="Enter Market Tow Price"/>
+            <input type="text" class="form-control" name="m_tow" id="m_tow" placeholder="Enter HeroMarket Market Price"/>
         </div>
     </div>
 </div>
@@ -98,7 +98,7 @@ input#uploadFile1 {
     <div class="cols-sm-10">
         <div class="input-group">
         <span class="input-group-addon"><i class="fa fa-money"></i></span>
-            <input type="text" class="form-control" name="m_three" id="m_three" placeholder="Enter Market Three Price"/>
+            <input type="text" class="form-control" name="m_three" id="m_three" placeholder="Enter Giant Mall Market Price"/>
         </div>    
     </div>
 </div>

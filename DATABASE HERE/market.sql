@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 06, 2020 at 05:05 PM
--- Server version: 10.4.10-MariaDB
--- PHP Version: 7.3.12
+-- Generation Time: Apr 08, 2020 at 08:30 AM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -43,7 +43,7 @@ CREATE TABLE `location` (
 --
 
 INSERT INTO `location` (`id`, `e_location`, `d_location`, `e_location2`, `d_location2`, `e_location3`, `d_location3`) VALUES
-(5, '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7199.014071094569!2d88.60108852676265!3d25.554792684924468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fb4e70a5903923%3A0x4613ad97964f588d!2sMohonpur!5e0!3m2!1sen!2sbd!4v1586177126537!5m2!1sen!2sbd\"  width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>', 'Mohonpur', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28798.969202782922!2d88.60652395613583!3d25.542668572975327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fb4e08ad882c77%3A0xa57e163d3abbfd4e!2sPark%20Of%20Ramsagar!5e0!3m2!1sen!2sbd!4v1586177206072!5m2!1sen!2sbd\"  width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>', 'Park Of Ramsagar', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.7040457363255!2d88.52841131541219!3d25.514915033749464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fb491dbd5be6c5%3A0xb23241c94f57aa2b!2sMadhabpur%20Baragachhi%2C%20West%20Bengal%20733132%2C%20India!5e0!3m2!1sen!2sbd!4v1586177239971!5m2!1sen!2sbd\"  width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>', 'Madhabpur Baragachhi');
+(8, '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.044546453113!2d101.58538211414569!3d3.082785754418222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c5b13df2b0b%3A0xdb3b8d640e8d8f01!2sAEON%20BiG%20Subang%20Jaya!5e0!3m2!1sen!2sbd!4v1586283318942!5m2!1sen!2sbd\"  width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>', 'AEON BiG Subang Jaya', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4078056.9857609374!2d99.79666317269736!3d3.4761558046930308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb64a0b3ba529%3A0x4e68d962b705938e!2sHeroMarket!5e0!3m2!1sen!2sbd!4v1586284194442!5m2!1sen!2sbd\" width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>', 'LG05-08 Festival Putrajaya, Jalan P3c, Presint 3, 62100, Wilayah Persekutuan Putrajaya, Malaysia', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.96674942172!2d101.5957866141457!3d3.1034903542986076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c175abba219%3A0x884ee05a8e21ccf4!2sGiant%20Mall%20Kelana%20Jaya!5e0!3m2!1sen!2sbd!4v1586283502853!5m2!1sen!2sbd\"  width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>', 'Giant Mall Kelana Jaya');
 
 -- --------------------------------------------------------
 
@@ -155,7 +155,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `location`
 --
 ALTER TABLE `location`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `offer`

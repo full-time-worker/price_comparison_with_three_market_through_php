@@ -27,13 +27,45 @@
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-open-btn" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"><i class="fa fa-navicon"></i></span> </button>
 				</div>
-				
+		<!-- search section start -->
+			
+		
+	
+<!-- search section end -->
 				<!-- NAV -->
 				<div class="collapse navbar-collapse" id="nav-open-btn">
-					<ul class="nav">
+					
+		
+				<!--	<ul class="nav">
+						<li><form action="search.php" method="get">
+				<input type="text" name="search_text">
+				<button type="submit" name="searchProduct">search</button>
+			</form></li> -->
+			
+			
+			
+			
+			
+			
+			
 						<li class="dropdown active"> <a href="index.php">Home</a></li>
 						<li> <a href="about.php">About </a> </li>                          
 						<li> <a href="contact.php"> contact</a> </li>
+						
+					<li class="dropdown"> <a href="javascript:void(0);" class="search-open"><i class=" icon-magnifier"></i></a>
+                <div class="search-inside animated bounceInUp"> <i class="icon-close search-close"></i>
+                  <div class="search-overlay"></div>
+                  <div class="position-center-center">
+                    <div class="search">
+                      <form action="search.php" method="get">
+                        <input type="search" name="search_text" placeholder="Search Product">
+                        <button type="submit" name="searchProduct"><i class="icon-check"></i></button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </li>
+						
 					</ul>
 				</div>
 				
@@ -46,15 +78,15 @@
 							<ul class="dropdown-menu"> 
 								
 								<!-- show all items start  -->
-								<!-- <div class="itemshow">
+								 <div class="itemshow">
 									
-								</div> -->
+								</div> --
 								<div id="itemshow">
 									
 									
 								</div>
 								
-								<!-- show all items end -->
+							<!--show all items end -->
 								
 								<li>
 									<h5 class="text-center">  </h5>
@@ -65,6 +97,8 @@
 									</div>
 								</li>
 								
+								<!-- search -->
+			
 								
 							</ul>
 						</li>
@@ -73,35 +107,7 @@
 			</nav>
 		</div>
 	</div>
-	<script>
-		$(document).ready(function(){
-			load_data();
-			function load_data(query)
-			{
-				$.ajax({
-					url:"fetch.php",
-					method:"post",
-					data:{query:query},
-					success:function(data)
-					{
-						$('#result').html(data);
-					}
-				});
-			}
-			
-			$('#search_text').keyup(function(){
-				var search = $(this).val();
-				if(search != '')
-				{
-					load_data(search);
-				}
-				else
-				{
-					load_data();			
-				}
-			});
-		});
-	</script>
+	
 	
 	
 </header>	

@@ -275,8 +275,11 @@ include "header.php";
 					});
 					
 					$admin = new Admin;
+					
 					$query = 'select * from post';
 					$output = $admin->readmore($query);
+				
+					
 					
 					while($op= mysqli_fetch_assoc($output)){
 						
@@ -292,7 +295,7 @@ include "header.php";
 									<div class="position-center-center">
 										<div class="inn">
 											<a href="<?php echo "upload/".$op['post_img']; ?>" data-lighter><i class="icon-eye"></i></a>
-											<span class="boxtrack icon1 icon " ><i class="icon-basket " id="c1"></i></span>
+											<span class="boxtrack icon1 icon " ><i class="fas fa-plus"></i></span>
 											<span class="boxtrack icon2 " ><i class="fas fa-check"></i></span>
 											<div class="fhidden" hidden> <?php echo $op['post_id']; ?> </div>
 										</div>
@@ -320,4 +323,5 @@ include "header.php";
 	<?php 
 		include 'footer.php';
 		
-	?>											
+	?>
+												

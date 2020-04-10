@@ -124,7 +124,7 @@
 										<thead class="thead-inverse">
 											<tr>
 												<td class="text-center" style="background:#ddd" colspan="4">
-													<b>Market 1</b>
+													<b>AEON BiG Subang Jaya</b>
 												</td>
 											</tr>
 											<tr>
@@ -185,7 +185,7 @@
 										<thead class="thead-inverse">
 											<tr>
 												<td class="text-center" style="background:#ddd" colspan="4">
-													<b>Market 2</b>
+													<b>HeroMarket</b>
 												</td>
 											</tr>
 											<tr>
@@ -249,7 +249,7 @@
 										<thead class="thead-inverse">
 											<tr>
 												<td class="text-center" style="background:#ddd" colspan="4">
-													<b>Market 3</b>
+													<b>Giant Mall Kelana Jaya</b>
 												</td>
 											</tr>
 											<tr>
@@ -269,7 +269,7 @@
 													?>                   
 													<tr class="text-center">
 														<td class="option">
-															<img class="img-fluid" style="height:50px;width:50px;object-fit: cover;
+															<img class="img-fluid" style="height:50px;width:50px;object-fit: cove;r
 															object-position:center" src="upload/<?php echo $op['post_img']; ?>" alt="img" />
 														</td>
 														<td class="align-middle"><?php echo $op['post_title']; ?></td>
