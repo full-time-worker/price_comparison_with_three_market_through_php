@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 08, 2020 at 08:30 AM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.3
+-- Generation Time: Apr 10, 2020 at 10:45 AM
+-- Server version: 10.4.10-MariaDB
+-- PHP Version: 7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,6 +21,26 @@ SET time_zone = "+00:00";
 --
 -- Database: `market`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact`
+--
+
+CREATE TABLE `contact` (
+  `id` int(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `message` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`id`, `name`, `email`, `message`) VALUES
+(13, 'Juwel', 'juwel@gmail.com', 'bsisfsfsf');
 
 -- --------------------------------------------------------
 
@@ -63,7 +83,7 @@ CREATE TABLE `offer` (
 --
 
 INSERT INTO `offer` (`mr_id`, `mr1`, `mr2`, `mr3`) VALUES
-(11, 'banner.png', 'Banner-1920x900.jpg', 'wosiwosi-hero-banner.jpg');
+(12, 'banner.png', 'Banner-1920x900.jpg', 'wosiwosi-hero-banner.jpg');
 
 -- --------------------------------------------------------
 
@@ -123,6 +143,12 @@ INSERT INTO `user` (`id`, `name`, `username`, `role`, `password`) VALUES
 --
 
 --
+-- Indexes for table `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `location`
 --
 ALTER TABLE `location`
@@ -152,6 +178,12 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT for table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
 -- AUTO_INCREMENT for table `location`
 --
 ALTER TABLE `location`
@@ -161,7 +193,7 @@ ALTER TABLE `location`
 -- AUTO_INCREMENT for table `offer`
 --
 ALTER TABLE `offer`
-  MODIFY `mr_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `mr_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `post`
